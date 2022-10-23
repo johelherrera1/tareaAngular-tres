@@ -1,0 +1,68 @@
+
+<!--                  
+<div class="container">
+    <div class=" col-sm-12 col-md-6 card">
+        <div class="content">
+            <h2>Empleado x</h2>
+            <img src="programador.svg" alt="">
+            <p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  mostrar
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                 <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                </div>
+              </div>
+
+            <h3 >Lenguajes: </h3>
+            <div class="lista">
+                <ul>
+                    <ul *ngFor="let item of lenguajes" class="text-white">{{item}}</ul>
+                    
+                </ul>
+            </div>
+            <h3>Edad: {{edad}} </h3>
+            <h4 *ngIf=" edad >= 18">Esta persona puede irse de fiesta!!</h4>
+            <button (click)="incrementarEdad()" class="btn btn-primary">Sumar edad  (+)</button>
+            <button (click)="decrementarEdad()" class="btn btn-primary">Restar edad (-)</button>
+        </div>
+    </div>
+  </div>
+  <p>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      mostrar
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+     <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+    </div>
+  </div>
+  -->
+
+<div class="cuerpo">
+  <div class="card">
+    <div class="imgBx">
+      <img src="img.jpg" alt="programadorx">
+    </div>
+    <div class="content">
+      <div class="details">
+        <h2>Programador X<br><span>Senior Full Stack Developer</span></h2>
+            <h3 >Lenguajes: </h3>
+            <div class="lista">
+                <ul>
+                    <ul *ngFor="let item of lenguajes" >{{item}}</ul>
+                    
+                </ul>
+            </div>
+            <h3>Edad: {{edad}} </h3>
+            <h4 *ngIf=" edad >= 18">Esta persona puede irse de fiesta!!</h4>
+            <button (click)="incrementarEdad()" class="btn btn-primary">Sumar edad  (+)</button>
+            <button (click)="decrementarEdad()" class="btn btn-primary">Restar edad (-)</button>
+      </div>
+    </div>
+  </div>
+</div>
+<img src="img.jpg" alt="">
